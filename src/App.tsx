@@ -1,11 +1,15 @@
 import React from "react";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
+import { Gallery } from "./feature/gallery/view/gallery.view";
 import { Hompage } from "./feature/homepage/view/hompage.view";
+import { FooterElement } from "./feature/shared/footer";
+import { NavbarComponent } from "./feature/shared/navbarComponent";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+     <NavbarComponent />
+        
         <Switch>
           <Route exact path="/">
             <Redirect to="/hompage" />
@@ -14,8 +18,13 @@ function App() {
             path="/hompage"
             component={(props: any) => <Hompage {...props} />}
           />
+           <Route
+            path="/gallery"
+            component={(props: any) => <Gallery {...props} />}
+          />
         </Switch>
-      </BrowserRouter>
+     
+      <FooterElement />
     </>
   );
 }
