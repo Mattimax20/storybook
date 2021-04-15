@@ -21,7 +21,7 @@ let i = 1;
           <Carousel.Caption>
             <h3>{i++} slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            <Button onClick = {props.onclick}> Provami </Button>
+            <Button  onClick = { props.onclick} data-value={v} > Provami </Button>
           </Carousel.Caption>
         </Carousel.Item>
           )}
