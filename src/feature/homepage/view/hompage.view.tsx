@@ -6,19 +6,12 @@ import { CardtextElement } from "../../shared/cardText";
 import { CarousellElement } from "../../shared/carousell";
 import { ImgComponent } from "../../shared/imgComponent";
 import { FooterElement } from "../../shared/footer";
+import { CarousellArray } from "../../shared/carousell.service";
 export function Hompage() {
   return (
     <>
       <CarousellElement
-        img1={
-          "https://i.pinimg.com/originals/2b/df/57/2bdf571e7f2491b931a84ed6b8d14a1d.jpg"
-        }
-        img2={
-          "https://i.pinimg.com/originals/2b/df/57/2bdf571e7f2491b931a84ed6b8d14a1d.jpg"
-        }
-        img3={
-          "https://i.pinimg.com/originals/2b/df/57/2bdf571e7f2491b931a84ed6b8d14a1d.jpg"
-        }
+      imgArray={CarousellArray}
       />
       <Container fluid>
         <hr className="hr-text" data-content="Info"></hr>
