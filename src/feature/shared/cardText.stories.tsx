@@ -18,7 +18,7 @@ export default {
 };
 
 
-const Template = args  => <CardtextElement {...args} />
+const Template = (args:any) => <CardtextElement {...args} />
 
 
 export const CardText = Template.bind({}) 

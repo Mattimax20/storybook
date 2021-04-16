@@ -1,12 +1,9 @@
 import React from "react";
 
-import { CardtextElement } from "./cardText";
+
 import { CarousellElement } from "./carousell";
 import { action } from "@storybook/addon-actions";
 import { CarousellArray } from "./carousell.service";
-import imgarray from "../../interface/imgArray.interface";
-import { imageArray } from "../gallery/service/gallery.service";
-import { Button } from "react-bootstrap";
 export default {
   title: "Carosello",
   component : CarousellElement,
@@ -18,7 +15,7 @@ export default {
  
 };
 
-const Template = args  => <CarousellElement {...args} />
+const Template = (args:any) => <CarousellElement {...args} />
 
 
 export const Carousell = Template.bind({}) 

@@ -8,7 +8,7 @@ import { NavbarComponent } from "./feature/shared/navbarComponent";
 function App() {
   return (
     <>
-     <NavbarComponent />
+     <NavbarComponent link1="Home" link2="Gallery" class="navbar navbar-dark bg-dark"/>
         
         <Switch>
           <Route exact path="/">
