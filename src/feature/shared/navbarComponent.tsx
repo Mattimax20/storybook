@@ -24,11 +24,11 @@ export function NavbarComponent( props: navbarprops) {
         <Nav className="mr-auto">
           <Nav.Link>
             {" "}
-            <a> {props.link1} </a>{" "}
+            <Link to="/"> {props.link1} </Link>{" "}
           </Nav.Link>
           <Nav.Link>
             {" "}
-            <a> {props.link2} </a>{" "}
+            <Link to="/gallery"> {props.link2} </Link>{" "}
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
